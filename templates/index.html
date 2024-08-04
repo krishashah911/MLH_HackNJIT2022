@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Image to Text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../static/main.css">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='a1.ico') }}">
+</head>
+
+<body>
+  <center><div class="drop-zone">
+    <img width="300px", height="300px" src="../static/{{file1}}" alt="Image">
+  </div>
+  <br>
+  <div>
+  <h1>Detected Number: {{result}}</h1>
+  
+  </div>
+  </center>
+</body>
